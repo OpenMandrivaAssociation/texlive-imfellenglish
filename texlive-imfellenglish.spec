@@ -1,6 +1,6 @@
 Name:		texlive-imfellenglish
 Version:	64568
-Release:	1
+Release:	2
 Summary:	IM Fell English fonts with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/imfellenglish
