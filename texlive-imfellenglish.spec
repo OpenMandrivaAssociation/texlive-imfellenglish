@@ -3,7 +3,7 @@ Version:	64568
 Release:	2
 Summary:	IM Fell English fonts with LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/imfellenglish
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/imfellenglish
 License:	ofl
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/imfellenglish.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/imfellenglish.doc.r%{version}.tar.xz
