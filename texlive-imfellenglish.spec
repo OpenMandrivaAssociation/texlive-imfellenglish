@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/imfellenglish.r%
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/imfellenglish.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 Igino Marini has implemented digital revivals of fonts bequeathed to
@@ -20,3 +21,10 @@ Oxford University by Dr. John Fell, Bishop of Oxford and Dean of Christ
 Church in 1686. This package provides the English family, consisting of
 Roman, Italic and Small-Cap fonts.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from imfellenglish:
+Map imfellEnglish.map
+TL_DROPIN_EOF
